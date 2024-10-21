@@ -1,0 +1,78 @@
+body {  
+  font-weight: 400;
+  font-style: normal;
+  background-color: #dedeff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 1em 0;
+  color: #2c3e50;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px; /* Espacio entre las dos imágenes */
+  margin-bottom: 20px;
+}
+
+.href-container {
+  /* quiero centrado */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  }
+
+.logo {
+  height: 150px;
+  width: auto;
+  padding: 1.5em;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #3498db);
+}
+
+.card {
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+a {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 150px;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+a:hover {
+  background-color: #4CAF50;
+  color: white;
+}

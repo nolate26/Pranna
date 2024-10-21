@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #bcbdc0c2;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #282e22;
+}
+.container {
+  width: 1000px;
+  margin-top: 200px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.proggress-bar-count {
+ 
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #340404;
+  margin-bottom: 10px;
+}
+
+.team-name {
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+  position: relative; /* Necesario para posicionar el marcador de puntos */
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 10px;
+  text-align: right; /* Alinea el texto dentro de la barra a la derecha */
+  line-height: 30px;
+  color: white;
+  transition: width 0.4s ease-in-out;
+  position: relative;
+}
+
+.progress-label {
+  margin-right: 10px; /* Añadir margen a la derecha */
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  /* quiero que el fondo sea transparente! a lo que hay detras */
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.team-name {
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000000;
+  margin-top: 60px;
+}

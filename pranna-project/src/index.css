@@ -1,54 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Share+Tech+Mono&family=VT323&display=swap');
+
+:root {
+    
+    
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 100;
+  font-style: normal;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
     background-color: #bcbdc0c2;
-    font-family: 'Roboto', sans-serif;
-}
-body {
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+    margin: 10px;
+  }
+  
+  a:hover {
+    color: #535bf2;
+  }
+  
+  body {
+    margin: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #282e22;
-}
-.container {
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+  
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  
+  button:hover {
+    border-color: #646cff;
+  }
+  
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+  
+    a:hover {
+      color: #747bff;
+    }
+  
+    button {
+      background-color: #f9f9f9;
+    }
+  }
+
+  .container {
     width: 1000px;
     margin-top: 200px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-}
-
-.proggress-bar-count {
+  }
+  
+  .proggress-bar-count {
    
     margin: 10px 0;
     font-size: 20px;
     font-weight: bold;
     color: #340404;
     margin-bottom: 10px;
-}
-
-.team-name {
+  }
+  
+  .team-name {
     text-align: left;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
     color: #333;
-}
-
-.progress-bar {
+  }
+  
+  .progress-bar {
     width: 100%;
     height: 30px;
     border-radius: 10px;
     background-color: #f5f5f5;
     margin-bottom: 10px;
     position: relative; /* Necesario para posicionar el marcador de puntos */
-}
-
-.progress-bar-fill {
+    border: 1px solid; /* Add border */
+  }
+  
+  .progress-bar-fill {
+    /* colorear el borde  */
     height: 100%;
     border-radius: 10px;
     text-align: right; /* Alinea el texto dentro de la barra a la derecha */
@@ -56,22 +122,92 @@ body {
     color: white;
     transition: width 0.4s ease-in-out;
     position: relative;
-}
-
-.progress-label {
+  }
+  
+  .progress-label {
     margin-right: 10px; /* Añadir margen a la derecha */
     font-size: 20px;
     font-weight: bold;
     color: #fff;
     /* quiero que el fondo sea transparente! a lo que hay detras */
     background-color: rgba(255, 255, 255, 0);
-}
-
-.team-name {
+  }
+  
+  .team-name {
     text-align: left;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
     color: #000000;
     margin-top: 60px;
-}
+  }
+ 
+
+
+  /* CSS */
+  .button-85 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-85:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
