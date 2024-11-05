@@ -1,6 +1,8 @@
 import React from "react";
 import './PaginaPrincipal.css';
-import carImage from '/auto_1.png';
+import carImage from '/red_car.png';
+import carImage2 from '/blue_car.png';
+import carImage3 from '/green_car.png';
 
 
 export const ProgressBar = ({ teamName, color, progress, onButtonClick, onWin }) => {
@@ -13,6 +15,19 @@ export const ProgressBar = ({ teamName, color, progress, onButtonClick, onWin })
 
     };
 
+    const getCarImage = (teamName) => {
+        switch (teamName) {
+            case "Equipo 1":
+                return carImage;
+            case "Equipo 2":
+                return carImage2;
+            case "Equipo 3":
+                return carImage3;
+            default:
+                return carImage; // Default image if teamName doesn't match
+        }
+    };
+
     return (
         <div className="container">
             <div className="team-name">{teamName}</div>
@@ -22,14 +37,16 @@ export const ProgressBar = ({ teamName, color, progress, onButtonClick, onWin })
                     style={{ width: `${(progress / 20) * 100}%`, backgroundColor: color }}
                 ></div>
                 <img
-                    src={carImage}
+                    src={getCarImage(teamName)}
                     alt="Car"
                     className="car"
                     style={{ left: `calc(${(progress / 20) * 100}% - 25px)` }}
+                    onClick={handleButtonClick}
                 />
                 <span className="progress-label">{progress}</span>
             </div>
-            <button onClick={handleButtonClick} className="button-85">¡+1 Punto!</button>
+            {/* <button onClick={handleButtonClick} class="pulse">¡+1 Punto!</button> */}
+            {/* <button onClick={handleButtonClick} className="button-85">¡+1 Punto!</button> */}
         </div>
     );
 };

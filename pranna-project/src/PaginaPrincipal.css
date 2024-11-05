@@ -31,11 +31,12 @@ body {
   }
   
   .progress-bar {
-    width: 100%;
-    height: 50px;
+    width: 100%; /* Ajustar el ancho según sea necesario */
+    max-width: 1200px; /* Aumentar el ancho máximo */
+    height: 70px; /* Aumentar la altura */
     border-radius: 10px;
-    background-color:rgb(192, 188, 188);
-    margin-bottom: 10px;
+    background-color: rgb(192, 188, 188);
+    margin-bottom: 20px; /* Aumentar el margen inferior */
     position: relative;
     overflow: hidden;
     display: flex;
@@ -77,19 +78,21 @@ body {
 
   .car {
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     z-index: 2;
     transition: left 0.4s ease-in-out;
+    cursor: pointer; /* Indicar que la imagen es interactiva */
   }
   
   .progress-label {
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     color: #333;
     position: absolute;
     right: -50px; /* Ajustar según sea necesario */
+ 
   }
 
 
@@ -98,7 +101,7 @@ body {
     padding: 0.6em 2em;
     border: none;
     outline: none;
-    color: rgb(255, 255, 255);
+    color: black;
     background: #111;
     cursor: pointer;
     position: relative;
@@ -155,7 +158,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #222;
+    background: rgb(210, 180, 140);
     left: 0;
     top: 0;
     border-radius: 10px;
@@ -213,3 +216,46 @@ body {
     background-color: #2980b9; /* Cambiar el color de fondo al pasar el cursor */
     transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el cursor */
 }
+
+/* 
+
+.pulse {
+  --color: #ef6eae;
+  --hover: #ef8f6e;
+}
+
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 1s;
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  color: var(--color);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+} */

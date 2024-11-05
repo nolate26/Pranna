@@ -24,8 +24,8 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px; /* Espacio entre las dos imágenes */
-  margin-bottom: 20px;
+  gap: 20px; /* Aumentar el espacio entre las imágenes */
+  margin-bottom: 40px; /* Aumentar el margen inferior */
 }
 
 .href-container {
@@ -36,7 +36,7 @@ h2 {
   }
 
 .logo {
-  height: 150px;
+  height: 200px;
   width: auto;
   padding: 1.5em;
   transition: filter 300ms;
@@ -62,12 +62,12 @@ a {
   background-color: #008CBA;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 20px 40px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  width: 150px;
+  font-size: 20px;
+  width: 200px;
   border-radius: 8px;
   transition-duration: 0.4s;
 }
