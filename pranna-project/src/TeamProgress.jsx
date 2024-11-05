@@ -3,6 +3,7 @@ import ProgressBar from "./progressBar";
 import './PaginaPrincipal.css';
 
 const TeamProgress = () => {
+    const [round, setRound] = useState(0);
     const [team1Progress, setTeam1Progress] = useState(0);
     const [team2Progress, setTeam2Progress] = useState(0);
     const [team3Progress, setTeam3Progress] = useState(0);
@@ -14,12 +15,14 @@ const TeamProgress = () => {
 
     return (
         <div>
+            <button onClick={() => setRound(round + 1)} className="button-title">Ronda {round}</button>
             {winningTeam && (
                 <div className="winner">
                     <h1>{`¡ ${winningTeam} ganador!`}</h1>
                     <img src="copa.png" alt="Trophy" className="trophy" />
                 </div>
             )}
+            
             <ProgressBar
                 teamName="Equipo 1"
                 color="red"

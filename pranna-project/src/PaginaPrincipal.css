@@ -24,7 +24,7 @@ body {
   
   .team-name {
     text-align: left;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
     margin-bottom: 5px;
     color: #333;
@@ -127,8 +127,9 @@ body {
   }
 
   .winner {
+
     text-align: center;
-    margin-top: 20px;
+    margin-top: 80px;
     background-color: transparent;
   }
 
@@ -155,3 +156,25 @@ body {
     color: #282829;
     margin-top: 10px;
   }
+
+
+  .button-title {
+    /* Botón grande tipo título */
+    padding: 1em 3em; /* Aumentar el padding para hacerlo más grande */
+    border: none;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700; /* Hacer el texto más grueso */
+    font-size: 2.5em; /* Aumentar el tamaño de la fuente */
+    font-style: normal;
+    background-color: #3498db; /* Color de fondo */
+    color: white; /* Color del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.button-title:hover {
+    background-color: #2980b9; /* Cambiar el color de fondo al pasar el cursor */
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el cursor */
+}
