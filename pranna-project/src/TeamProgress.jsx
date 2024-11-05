@@ -25,21 +25,21 @@ const TeamProgress = () => {
             
             <ProgressBar
                 teamName="Equipo 1"
-                color="red"
+                color="rgb(220, 20, 60"
                 progress={team1Progress}
                 onButtonClick={() => setTeam1Progress(team1Progress + 1)}
                 onWin={handleWin}
             />
             <ProgressBar
                 teamName="Equipo 2"
-                color="blue"
+                color="rgb(30, 144, 255)"
                 progress={team2Progress}
                 onButtonClick={() => setTeam2Progress(team2Progress + 1)}
                 onWin={handleWin}
             />
             <ProgressBar
                 teamName="Equipo 3"
-                color="green"
+                color="rgb(124, 252, 0)"
                 progress={team3Progress}
                 onButtonClick={() => setTeam3Progress(team3Progress + 1)}
                 onWin={handleWin}
