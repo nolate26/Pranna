@@ -1,0 +1,13 @@
+@echo off
+cd C:\Users\nolat\Desktop\Pranna\pranna-project
+
+REM Iniciar el servidor de desarrollo
+start "" npm run dev
+
+REM Esperar unos segundos para que el servidor se inicie completamente
+timeout /t 5 /nobreak >nul
+
+REM Abrir la URL en el navegador predeterminado
+start http://localhost:5173/
+
+pause
